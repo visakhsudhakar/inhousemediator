@@ -4,3 +4,4 @@
 /home/user/inhousemediator/obj/Debug/net9.0/myapp.MvcApplicationPartsAssemblyInfo.cache
 /home/user/inhousemediator/obj/Debug/net9.0/myapp.AssemblyInfoInputs.cache
 /home/user/inhousemediator/obj/Debug/net9.0/myapp.AssemblyInfo.cs
+/home/user/inhousemediator/obj/Debug/net9.0/myapp.sourcelink.json
