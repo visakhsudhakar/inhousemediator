@@ -1,28 +1,25 @@
-using MediatR;
-using System.Reflection;
 using Application.Commands;
 using Application.Queries;
+using MediatR;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build(); // Add this line to define 'app'
 
 // Add MediatR
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly(), Assembly.Load("Application")));
 
-var port = Environment.GetEnvironmentVariable("PORT") ?? "3000";
-var url = $"http://0.0.0.0:{port}";
-
-var app = builder.Build();
-
-app.MapGet("/greet-command", async (IMediatR mediator, string name) =>
+// Ensure the correct interface name is used
+app.MapGet("/greet-command", async (IMediator mediator, string name) =>
 {
     var greeting = await mediator.Send(new GreetCommand(name));
     return greeting;
 });
 
-app.MapGet("/greet-query", async (IMediatR mediator, string name) =>
+app.MapGet("/greet-query", async (IMediator mediator, string name) =>
 {
     var greeting = await mediator.Send(new GetGreetingQuery(name));
     return greeting;
 });
 
-app.Run(url);
+app.Run(); // Remove 'url' parameter if not defined
