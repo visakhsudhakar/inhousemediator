@@ -47,19 +47,6 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
-      },
-      "Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "MediatR": "12.2.0"
-        },
-        "compile": {
-          "bin/placeholder/Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Application.dll": {}
-        }
       }
     }
   },
@@ -125,16 +112,10 @@
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "Application/1.0.0": {
-      "type": "project",
-      "path": "Application/Application.csproj",
-      "msbuildProject": "Application/Application.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Application >= 1.0.0",
       "MediatR >= 12.2.0"
     ]
   },
@@ -144,11 +125,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/user/inhousemediator/myapp.csproj",
-      "projectName": "myapp",
-      "projectPath": "/home/user/inhousemediator/myapp.csproj",
+      "projectUniqueName": "/home/user/inhousemediator/Application/Application.csproj",
+      "projectName": "Application",
+      "projectPath": "/home/user/inhousemediator/Application/Application.csproj",
       "packagesPath": "/home/user/.nuget/packages/",
-      "outputPath": "/home/user/inhousemediator/obj/",
+      "outputPath": "/home/user/inhousemediator/Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/user/.nuget/NuGet/NuGet.Config"
@@ -162,11 +143,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {
-            "/home/user/inhousemediator/Application/Application.csproj": {
-              "projectPath": "/home/user/inhousemediator/Application/Application.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -202,9 +179,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
