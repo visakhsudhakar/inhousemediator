@@ -10,12 +10,20 @@
   <ItemGroup>
     <Compile Remove="Application\bin\**" />
     <Compile Remove="Application\obj\**" />
+    <Compile Remove="Infrastructure\bin\**" />
+    <Compile Remove="Infrastructure\obj\**" />
     <Content Remove="Application\bin\**" />
     <Content Remove="Application\obj\**" />
+    <Content Remove="Infrastructure\bin\**" />
+    <Content Remove="Infrastructure\obj\**" />
     <EmbeddedResource Remove="Application\bin\**" />
     <EmbeddedResource Remove="Application\obj\**" />
+    <EmbeddedResource Remove="Infrastructure\bin\**" />
+    <EmbeddedResource Remove="Infrastructure\obj\**" />
     <None Remove="Application\bin\**" />
     <None Remove="Application\obj\**" />
+    <None Remove="Infrastructure\bin\**" />
+    <None Remove="Infrastructure\obj\**" />
   </ItemGroup>
 
   <ItemGroup>
