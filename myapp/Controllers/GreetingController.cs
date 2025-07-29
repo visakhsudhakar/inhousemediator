@@ -1,7 +1,8 @@
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
 using Application.Commands;
 using Application.Queries;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
+
 
 [ApiController]
 [Route("[controller]")]
