@@ -8,6 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Application\bin\**" />
+    <Compile Remove="Application\obj\**" />
+    <Content Remove="Application\bin\**" />
+    <Content Remove="Application\obj\**" />
+    <EmbeddedResource Remove="Application\bin\**" />
+    <EmbeddedResource Remove="Application\obj\**" />
+    <None Remove="Application\bin\**" />
+    <None Remove="Application\obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MediatR" Version="12.2.0" />
   </ItemGroup>
 
