@@ -48,15 +48,3 @@ Dockerfile
 Dockerfile.*
 .dockerignore
 
-## Ignore specific files
-appsettings*.json
-launchSettings.json
-
-## Ignore specific directories
-Properties/
-
-/Application/obj/Debug/net9.0/Application.AssemblyInfo.cs
-/Application/obj/Debug/net9.0/Application.AssemblyInfoInputs.cache
-/obj/Debug/net9.0/myapp.sourcelink.json
-/Properties/launchSettings.json
-/myapp.csproj.user
