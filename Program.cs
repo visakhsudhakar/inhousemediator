@@ -1,5 +1,7 @@
 using MediatR;
 using System.Reflection;
+using Domain.Interfaces;
+using Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,9 @@ builder.Services.AddSwaggerGen();
 
 // Add MediatR
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly(), Assembly.Load("Application")));
+
+// Register Infrastructure services
+builder.Services.AddScoped<IGreetingRepository, GreetingRepository>();
 
 var app = builder.Build();
 
